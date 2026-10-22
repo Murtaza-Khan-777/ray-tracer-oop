@@ -6,13 +6,6 @@
 
 A high-performance, interactive 3D ray tracing engine built from scratch in C++. This project demonstrates advanced Object-Oriented Programming (OOP) principles, real-time multi-threaded graphics rendering, and physically-based light transport.
 
-**Course:** CS/CE 224/272 Object-Oriented Programming and Design Methodologies (Fall 2026)  
-**Institution:** Habib University  
-
-## 👥 Team Members
-* **Muhammad Murtaza Khan** (mk11743) - GitHub: [@username1]
-* **[Member 2 Full Name]** ([ID]) - GitHub: [@username2]
-* **[Member 3 Full Name]** ([ID]) - GitHub: [@username3]
 ## 🛠️ How does a Ray Tracer work?
 * **The ray tracer sets a 3d world with a camera placed at (0.00 , 0.00, 0.00) and a pixel map(viewport) placed at a distance of focal lenght from the camera, the direction vector from the camera to each pixel on the pixel provides as the primary ray for that pixel , the primary ray is then extrapolated from the pixel map to the 3d scene behind it the ray looks for the first "Hittable" it finds and collides with it , at collision the engine locates the light sources from the object known by the list of light sources mantained in the program, and draws a ray between them , the recursive nature of the call comes into the play and finds the final intensity of the light in the flow lightsource --> hittable --> pixel, the effect of surrounding objects on the color and brightness of the pixel in taken into account using Monte - Carlo Integration , where further rays are shot at point of collision in random directions and then averaged to find the final color of the select pixel , simulating the real world effect of other objects' emission on the color of a given object.
  
