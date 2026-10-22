@@ -1,0 +1,22 @@
+# Build artifacts
+*.exe
+*.obj
+*.o
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Build directories
+build/
+cmake-build-*/
+
+# SFML and TGUI binaries
+bin/
+lib/
+
+# Local settings
+.vscode/
+.idea/
+.DS_Store
